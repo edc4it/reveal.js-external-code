@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>External Code reveal.js plugin</title>
+  <link rel="stylesheet" href="node_modules/reveal.js/dist/reset.css" />
+  <link rel="stylesheet" href="node_modules/reveal.js/dist/reveal.css" />
+  <link rel="stylesheet" href="node_modules/reveal.js/dist/theme/black.css" />
+  <link rel="stylesheet" href="node_modules/reveal.js/plugin/highlight/monokai.css" />
+</head>
+<body>
+<div class="reveal">
+  <div class="slides">
+    <section>
+      <h1>RailRoad</h1>
+      <h2>Reveal.js Plugin</h2>
+      <object type="reveal.js/code" data-src="code-samples/k8s.yaml" data-line-numbers="">
+      </object>
+    </section>
+
+    <section>
+      <h1>RailRoad</h1>
+      <h2>ranges</h2>
+      <h3>using <code>data-lines</code> attributes</h3>
+      <object type="reveal.js/code"
+              data-src="code-samples/k8s.yaml"
+              data-lines="1"
+      >
+      </object>
+    </section>
+    <section>
+      <h1>RailRoad</h1>
+      <h2>ranges</h2>
+      <h3>inside file <code>@reveal.js/code</code></h3>
+      <object type="reveal.js/code" data-src="code-samples/fibonacci.hs" data-line-numbers="">
+      </object>
+    </section>
+  </div>
+</div>
+
+<script type="module">
+  import Reveal from 'reveal.js';
+  import ExternalCode from './src/plugin.ts';
+  import RevealHighlight from 'reveal.js/plugin/highlight/highlight';
+
+  Reveal.initialize({
+    history: true,
+    overview: false,
+    center: true,
+    margin: 0.15,
+
+    externalCode: {
+      local: {
+        absPath: '/home/rparree/projects/foss-edc4it/reveal.js-external-code/public',
+        scheme: 'vscode://file//', // default
+      },
+
+    },
+    plugins: [ExternalCode, RevealHighlight],
+  });
+</script>
+</body>
+</html>

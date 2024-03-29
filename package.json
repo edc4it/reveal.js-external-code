@@ -1,0 +1,62 @@
+{
+  "name": "@edc4it/reveal.js-external-code",
+  "license": "MIT",
+  "keywords": [
+    "reveal",
+    "reveal.js",
+    "reveal-plugin",
+    "plugin",
+    "railroad",
+    "syntax",
+    "diagrams"
+  ],
+  "version": "1.0.1",
+  "files": [
+    "dist"
+  ],
+  "author": "Raphaël Parrée <rparree@edc4it.com> (https://www.edc4it.com/)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edc4it/reveal.js-external-code.git"
+  },
+  "main": "./dist/railroad.umd.js",
+  "module": "./dist/railroad.es.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "test": "vitest",
+    "preview": "vite preview",
+    "lint": "eslint . --ext .ts,.tsx",
+    "prepare": "husky"
+  },
+  "lint-staged": {
+    "*.ts": "eslint --cache --fix"
+  },
+  "devDependencies": {
+    "@types/reveal.js": "^5.0.1",
+    "@typescript-eslint/eslint-plugin": "^7.4.0",
+    "@typescript-eslint/parser": "^7.4.0",
+    "autoprefixer": "^10.4.19",
+    "eslint": "^8.57.0",
+    "eslint-plugin-import": "^2.29.1",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.2",
+    "postcss-nesting": "^12.1.0",
+    "typescript": "^5.2.2",
+    "vite": "^5.2.0",
+    "vite-plugin-css-injected-by-js": "^3.5.0",
+    "vite-plugin-dts": "^3.8.0",
+    "vite-plugin-remove-console": "^2.2.0",
+    "vitest": "^1.4.0"
+  },
+  "dependencies": {
+    "deepmerge": "^4.3.1",
+    "reveal.js": "^5.0.5",
+    "simple-notify": "^1.0.4"
+  },
+  "bugs": {
+    "url": "https://github.com/edc4it/reveal.js-external-code/issues"
+  },
+  "homepage": "https://github.com/edc4it/reveal.js-external-code#readme",
+  "description": ""
+}

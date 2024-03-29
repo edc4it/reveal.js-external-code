@@ -1,0 +1,26 @@
+.reveal pre {
+    width: 100%;
+}
+
+.external-code-wrapper {
+    width: 100%;
+
+    footer.demo-ref {
+        &::before {
+            color: #0d99a5;
+
+            margin-right: 0.3em;
+        }
+        font-size: 14px;
+        margin-top: -18px;
+        color: #0d99a5;
+        text-align: right;
+        cursor: help;
+
+        transition: font-size 400ms 100ms;
+        &:hover{
+            font-size: 28px;
+            cursor: none;
+        }
+    }
+}
