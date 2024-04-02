@@ -6,6 +6,7 @@ import { fetchCode } from './fetcher.ts';
 import Notify from 'simple-notify';
 import { parseRange } from './parsers/range-parser.ts';
 import { replace } from '../util/dom-utils.ts';
+import { getAbsUrl } from '../util/url-util.ts';
 
 function getSelectedCode(contents: string, dataLines: string | null) {
     const { range: embeddedRange, lines,annotated } = fileParser(contents);
@@ -23,7 +24,7 @@ export async function run(revealElement: HTMLElement, options: Options) {
         const src = e.getAttribute('data-src');
         const dataLines = e.getAttribute('data-lines');
         if (src) {
-            const relUri = `./${options.basePath}/${src}`;
+            const relUri = getAbsUrl(options.basePath,src);
             try {
                 const contents = await fetchCode(relUri, options);
                 if (contents) {
