@@ -9,6 +9,8 @@ This way your demos and slides stay in sync.
 
 You will need to run your slides from a server.
 
+![](demo/Screenshot_20240402_082325.png)
+
 ## Quickstart
 
 ### Installation
