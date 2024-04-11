@@ -21,6 +21,7 @@
   },
   "main": "./dist/external-code.umd.js",
   "module": "./dist/external-code.es.js",
+  "types": "./dist/plugin.d.ts",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
