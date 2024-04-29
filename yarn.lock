@@ -2874,9 +2874,9 @@ vite-node@1.5.0:
     vite "^5.0.0"
 
 vite-plugin-css-injected-by-js@^3.5.0:
-  version "3.5.0"
-  resolved "https://registry.npmjs.org/vite-plugin-css-injected-by-js/-/vite-plugin-css-injected-by-js-3.5.0.tgz"
-  integrity sha512-d0QaHH9kS93J25SwRqJNEfE29PSuQS5jn51y9N9i2Yoq0FRO7rjuTeLvjM5zwklZlRrIn6SUdtOEDKyHokgJZg==
+  version "3.5.1"
+  resolved "https://registry.yarnpkg.com/vite-plugin-css-injected-by-js/-/vite-plugin-css-injected-by-js-3.5.1.tgz#b9c568c21b131d08e31aa6d368ee39c9d6c1b6c1"
+  integrity sha512-9ioqwDuEBxW55gNoWFEDhfLTrVKXEEZgl5adhWmmqa88EQGKfTmexy4v1Rh0pAS6RhKQs2bUYQArprB32JpUZQ==
 
 vite-plugin-dts@^3.8.0:
   version "3.8.3"
