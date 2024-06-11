@@ -2914,9 +2914,9 @@ vite-plugin-css-injected-by-js@^3.5.0:
   integrity sha512-9ioqwDuEBxW55gNoWFEDhfLTrVKXEEZgl5adhWmmqa88EQGKfTmexy4v1Rh0pAS6RhKQs2bUYQArprB32JpUZQ==
 
 vite-plugin-dts@^3.8.0:
-  version "3.8.3"
-  resolved "https://registry.yarnpkg.com/vite-plugin-dts/-/vite-plugin-dts-3.8.3.tgz#0505bcd07897f06859d5fb8d4b6332022af90ba5"
-  integrity sha512-yRHiRosQw7MXdOhmcrVI+kRiB8YEShbSxnADNteK4eZGdEoyOkMHihvO5XOAVlOq8ng9sIqu8vVefDK1zcj3qw==
+  version "3.9.1"
+  resolved "https://registry.yarnpkg.com/vite-plugin-dts/-/vite-plugin-dts-3.9.1.tgz#625ad388ec3956708ccec7960550a7b0a8e8909e"
+  integrity sha512-rVp2KM9Ue22NGWB8dNtWEr+KekN3rIgz1tWD050QnRGlriUCmaDwa7qA5zDEjbXg5lAXhYMSBJtx3q3hQIJZSg==
   dependencies:
     "@microsoft/api-extractor" "7.43.0"
     "@rollup/pluginutils" "^5.1.0"
