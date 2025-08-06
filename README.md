@@ -64,6 +64,24 @@ Any known [fragments](https://revealjs.com/fragments/) classes on the `object` a
 </object>
 ```
 
+## Escaping HTML Content
+
+When including code that contains HTML special characters (`<`, `>`, `&`, `'`, `"`), you can use the `data-escape-code` attribute to automatically escape these characters. 
+
+```html
+<object type="reveal.js/code"
+        data-src="code-samples/html-example.html"
+        data-escape-code>
+</object>
+```
+With `data-escape-code` added, special characters will be converted to their HTML entity equivalents:
+- `&` becomes `&amp;`
+- `<` becomes `&lt;`
+- `>` becomes `&gt;`
+- `'` becomes `&#39;`
+- `"` becomes `&quot;`
+
+
 ## Limit lines
 
 By default, all lines in the `data-src` are displayed (except the one with an optional `@reveal.js/code` annotation, see below).
@@ -156,5 +174,3 @@ Reveal.initialize({
 - `codeBlock`
   -  `trim`: set to `false` to keep whitespace before first character/after last character
   -  `additionalClasses`: array of additional css classes to add to the `code` element
-
-

@@ -23,12 +23,23 @@ export async function run(revealElement: HTMLElement, options: Options) {
     const r = Array.from(es).map(async (e) => {
         const src = e.getAttribute('data-src');
         const dataLines = e.getAttribute('data-lines');
-        if (src) {
+        const hasEscape = e.hasAttribute('data-escape-code');
+
+      if (src) {
             const relUri = getAbsUrl(options.basePath,src);
             try {
                 const contents = await fetchCode(relUri, options);
                 if (contents) {
-                    const code = getSelectedCode(contents, dataLines);
+
+                    const escaped = hasEscape ? contents.replace(/[&<>'"]/g, (char) => ({
+                      '&': '&amp;',
+                      '<': '&lt;',
+                      '>': '&gt;',
+                      '\'': '&#39;',
+                      '"': '&quot;',
+                    })[char] || char) : contents;
+
+                    const code = getSelectedCode(escaped, dataLines);
                     const structure = new Structure(e.attributes, src, relUri, code, options);
                     const html = structure.create()
                     replace(e, html);
