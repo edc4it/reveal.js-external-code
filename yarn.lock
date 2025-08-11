@@ -472,9 +472,9 @@
   integrity sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==
 
 "@types/reveal.js@^5.0.1":
-  version "5.0.3"
-  resolved "https://registry.yarnpkg.com/@types/reveal.js/-/reveal.js-5.0.3.tgz#3d53723d1a959027af4270888c84fb0f9e189acb"
-  integrity sha512-gwnK8TR38IOBIORWFrV5/z9lRX4iLke2FBqNgRhXxehaWJFkrzVY2TVzfdX/SX94eugt+OI5l++zDBBSfdzruQ==
+  version "5.2.0"
+  resolved "https://registry.yarnpkg.com/@types/reveal.js/-/reveal.js-5.2.0.tgz#d000dcdb9457e387b5d0c2773662ce5092cc35cc"
+  integrity sha512-IHO3Nc0YjI4CKQHeK/2U+6SinAJCC8/xiKCIDQnlFCiq02GMag+WrveIszll033zyv/mtXoCnWmYZITUngE2pA==
 
 "@typescript-eslint/eslint-plugin@^7.4.0":
   version "7.18.0"
@@ -2539,9 +2539,9 @@ reusify@^1.0.4:
   integrity sha512-U9nH88a3fc/ekCF1l0/UP1IosiuIjyTh7hBvXVMHYgVcfGvt897Xguj2UOLDeI5BG2m7/uwyaLVT6fbtCwTyzw==
 
 reveal.js@^5.0.5:
-  version "5.1.0"
-  resolved "https://registry.yarnpkg.com/reveal.js/-/reveal.js-5.1.0.tgz#dfaa4631127e739aa8ebbaa425d653e72d799e66"
-  integrity sha512-KDt7m0+xwKV6nAZt4CNPVFBf42sTKRQapg0bGGKB5PKO5XvChnMfwlZkybydHiQJ7p5+6LbHKRGrhXODdoNIaA==
+  version "5.2.1"
+  resolved "https://registry.yarnpkg.com/reveal.js/-/reveal.js-5.2.1.tgz#22e5f4aca16b2b9efc0fef7b8b62455861fef39c"
+  integrity sha512-r7//6mIM5p34hFiDMvYfXgyjXqGRta+/psd9YtytsgRlrpRzFv4RbH76TXd2qD+7ZPZEbpBDhdRhJaFgfQ7zNQ==
 
 rfdc@^1.4.1:
   version "1.4.1"
