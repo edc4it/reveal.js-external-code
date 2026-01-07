@@ -1,5 +1,12 @@
 # Reveal.js External Code
 
+
+> [!CAUTION]
+> **This project is ARCHIVED.** It is no longer maintained.
+> The active version is now available at https://codeberg.org/edc4it/reveal.js-external-code.
+
+
+
 [![Version](https://img.shields.io/npm/v/@edc4it/reveal.js-external-code)](#)
 
 A [reveal.js](https://revealjs.com/) plugin to load code from the server.
